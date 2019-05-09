@@ -1,1 +1,141 @@
-<h1>hello<h1>
+<html>
+	<head>
+		<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.container {
+	text-align: center;
+	max-width: 40em;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	font-size: 100%;
+}
+    .container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+    width="320";
+    height="240"
+}
+    nav li {display: inline-block;}
+nav a {display: block; color: black; background: NONE; padding: 6px 10px; text-decoration: none; margin: 0 10px; hover: background: yellow; color: RED} 
+a:hover { 
+  color: BLACK;
+}
+
+    ul {color: black}
+.content {
+  position: fixed;
+  bottom: 0;
+  background:none;
+  color: none;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: red;
+  cursor: pointer;
+   font-family: 'arial black', sans-serif;
+    font-style: italic
+}
+
+#myBtn:hover {
+  background: NONE;
+  color: black;
+}
+</style>
+</head>
+<body>
+<div class="overlay">
+        
+         
+        
+    </div>
+</div>
+<video autoplay muted loop id="myVideo">
+  <source src="cherrybombscream.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+<figure>
+			<img src="CHERRYBOMBREDLOGO.png">
+        </figure>
+    
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "PAUSE";
+  } else {
+    video.pause();
+    btn.innerHTML = "PLAY";
+  }
+}
+</script>
+
+</body>
+		<title>CHERRY BOMB</title>
+		<link rel="stylesheet" href="cherrybomb.css" type="text/css" />
+		</head>
+	
+	<body>
+		<div class="image1">
+            
+
+			<div class="container">
+                <nav>
+             <ul>
+        <li> <a href="file:///Users/devonblackwell/Desktop/Web%20Design%20Basics/parsons/website.html#develop">FASHION</a> </li>
+        <li> <a href="file:///Users/devonblackwell/Desktop/Web%20Design%20Basics/parsons/website.html#discovery">LIVING</a></li>
+        <li> <a href="file:///Users/devonblackwell/Desktop/Web%20Design%20Basics/parsons/website.html#target">BEAUTY</a> </li>
+        <li> <a href="file:///Users/devonblackwell/Desktop/Web%20Design%20Basics/parsons/website.html#moodboard">INSPIRATION</a> </li>
+        
+        
+      </ul>
+                </nav>
+                
+		</div>
+	</body>
+        <figure>
+			<img src="CHERRYBOMBREDLOGO.png">
+        </figure>
+</html>
